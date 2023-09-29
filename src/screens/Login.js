@@ -34,13 +34,13 @@ const Login = (props) => {
       });
 
       //cek user
-      // db.transaction((tx) => {
-      //   tx.executeSql('SELECT * FROM users', [], (_, { rows }) => {
-      //     const data = [];
-      //     const len = rows.item(0).name;
-      //     console.log(len);
-      //   });
-      // });
+      db.transaction((tx) => {
+        tx.executeSql('SELECT * FROM users', [], (_, { rows }) => {
+          const data = [];
+          const len = rows.item(0).name;
+          console.log(len);
+        });
+      });
 
   }, []);
 
