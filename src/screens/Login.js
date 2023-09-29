@@ -86,7 +86,7 @@ const Login = (props) => {
     <View style={{
       flexGrow: 1,
       justifyContent:'center',
-      backgroundColor:'#1c313a',
+      backgroundColor:'#8FBC8F',
       alignItems: 'center'
     }}>
       <Text style={{
